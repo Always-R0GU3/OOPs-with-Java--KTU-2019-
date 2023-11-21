@@ -26,11 +26,12 @@ class Employee
 
 class Officer extends Employee
 {
-	String Specialization;
+	String Specialization="Transport";
 	Officer(String Name,String Address,int Age,long Phno,int Salary)
 	{
 		super(Name,Address,Age,Phno,Salary);		
 		System.out.println("\nDetails of Officer");
+		System.out.println("Specializtion: "+Specialization);
 		display();
 		print_Salary();
 	}
@@ -38,11 +39,12 @@ class Officer extends Employee
 
 class Manager extends Employee
 {
-	String Department;
+	String Department="Sales";
 	Manager(String Name,String Address,int Age,long Phno,int Salary)
 	{
 		super(Name,Address,Age,Phno,Salary);		
 		System.out.println("\nDetails of Manager");
+		System.out.println("Department: "+Department);
 		display();
 		print_Salary();
 	}
